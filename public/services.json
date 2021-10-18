@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "HIGHLY QUALIFIED DOCTORS",
+        "desc": "Our Doctors have made you, our valued patrons their first priority. Even outside of working hours, our doctors are available for our registered patients over the phone.You will find the best doctors in Dubai at Panacea who are highly qualified and have years of experience in their respective fields. We have specialists in all our departments who have worked in the UAE and abroad prior to joining our team. The Panacea doctors regularly attend medical/dental conferences and trainings to keep abreast with the latest developments in their fields.Other than their clinical expertise and work experience, our team of doctors have compassion for our valued patients and advise them on not only the health care issue they have come to consult for but also preventive action they can take to avoid sickness in the future based on their personal family history and lifestyle.",
+        "img": "https://image.freepik.com/free-photo/surgeon-writing-down-some-operation-notes_329181-19658.jpg"
+    },
+    {
+        "id": 2,
+        "name": "24 HOURS AMBULANCE SERVICE",
+        "desc": "We   provide  emergency   ambulance   service  to   people  with  acute   illness  and  pregnancy  in   Dhaka,  as  well  as Chattogram, Sylhet, Rajshahi, Khulna, Cumilla, Rangpur and all other major citites even in some rural areas in Bangladesh. We  have  trained  paramedics,  and  doctors  in  some cases, and a range of fully equipped ambulance vehicles. Our system operates in a  coordinated  partnership among various organizations provide high quality pre-hospital  medical  care.  Basic  life supports  are  provided  in  almost  every ambulance while advanced life support services  are  provided  by  several ambulance  services and all helicopter ambulance services in Bangladesh. These services provide cardiac monitoring, intravenous cannulation, and insert advanced airway system.",
+        "img": "https://image.freepik.com/free-photo/british-ambulance-parked-parking-lot_53876-63437.jpg"
+    },
+    {
+        "id": 3,
+        "name": "LATEST TECHNOLOGY AND EQUIPMENTS",
+        "desc": "Modern societies reap great benefits from technological advancements. The healthcare sector is no different. SevenHills Hospital incorporates the latest technology and medical equipment in patient care that helps the doctors diagnose diseases and treat patients effectively and efficiently.",
+        "img": "https://image.freepik.com/free-photo/medical-doctor-girl-working-with-microscope-young-female-scientist-doing-vaccine-research_1157-48128.jpg"
+    },
+    {
+        "id": 4,
+        "name": "RESOURCEFUL ICU AND OPERATION THEATER",
+        "desc": "They're staffed with specially trained healthcare professionals and contain sophisticated monitoring equipment.ICUs are also sometimes called critical care units (CCUs) or intensive therapy units (ITUs). They're staffed with specially trained healthcare professionals and contain sophisticated monitoring equipment.ICUs are also sometimes called critical care units (CCUs) or intensive therapy units (ITUs).",
+        "img": "https://image.freepik.com/free-photo/modern-equipment-operating-room-medical-devices-neurosurgery_179755-863.jpg"
+    },
+    {
+        "id": 5,
+        "name": "CABINS AND WARDS WITH MODERN FACILITIES",
+        "desc": "As long as you’re here to stay, we try our best to make your day!With our IPD counseling services, we guide patients and visitors through the process of admission, treatment, and follow-up for a hassle-free stay at Grande City Hospital.Our dedicated staff and IPD counselor are always at your service, and can be contacted if you require any assistance regarding the hospital- from payment process to location of the canteen.Fitted with bedside central supply of oxygen & vacuum, bedside monitors, our fully-equipped inpatient departments include:",
+        "img": "https://image.freepik.com/free-photo/hospital-ward-with-beds-medical-equipment_46527-119.jpg"
+    },
+    {
+        "id": 6,
+        "name": "24 HOURS EMERGENCY SERVICE",
+        "desc": "Kalra is known for providing advanced emergency services with rapid response for any kind of treatment. We have well-equipped emergency and trauma center with facilities of international standards. Our emergency department is always ready for these services. The department has state-of-the-art equipment and advanced patient monitoring systems to respond to any medical emergency.The hospital provides round-the-clock emergency services, with a facility that is fully equipped and managed by a dedicated team of qualified emergency care professionals. A well-defined emergency management system has been developed to increase efficiency of rescue efforts. This includes enhanced first aid on site and improved overall coordination amongst the hospital staff involved in coping with emergency situations. We have developed a special training module for every emergency that may arise.",
+        "img": "https://image.freepik.com/free-photo/beautiful-woman-family-doctor-measures-blood-pressure-with-tonometer_496169-1490.jpg"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "DEPARTMENT OF ONCOLOGY",
+        "desc": "Oncology is the study of cancer. An oncologist is a doctor who treats cancer and provides medical care for a person diagnosed with cancer. An oncologist may also be called a cancer specialist. The field of oncology has 3 major areas based on treatments: medical oncology, radiation oncology, and surgical oncology",
+        "img": "https://sarvodayahospital.com/admin/data/app/1585217778010.png"
+    },
+    {
+        "id": 2,
+        "name": "CARDIOLOGY DEPARTMENT",
+        "desc": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist. Cardiology is a branch of internal medicine. A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system",
+        "img": "https://www.dicardiology.com/sites/default/files/field/image/CVIS_CPACS_GE%20healthcare.jpg"
+    },
+    {
+        "id": 3,
+        "name": "DEPARTMENT OF NEUROLOGY",
+        "desc": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions: Central nervous system: the brain and spinal cord",
+        "img": "https://bookingdoctors.com/wp-content/uploads/2021/04/Neurology-307x287-1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "RADIOLOGY DEPARTMENT",
+        "desc": "Radiology is a medical specialty that uses imaging to diagnose and treat diseases seen within the body.The radiology department may also be called the X-ray or imaging department. It is the facility in the hospital where radiological examinations of patients are carried out, using the range of equipment listed above",
+        "img": "https://smcw.edu.in/assets/images/services/radiology1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "DEPARTMENT OF MEDICINE",
+        "desc": "Department of Internal Medicine focuses on the diagnosis, treatment, and prevention of non-surgical conditions in adults. The department provides a wide range of high quality cross-specialty health care services, including physical examinations, preventive screenings and immunizations, urgent care for medical conditions, and referrals to surgical specialists when appropriate",
+        "img": "https://bsmmu.edu.bd/public/uploads/images/Internal-Medicine.jpg"
+    }
+]

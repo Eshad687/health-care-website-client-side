@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "que": "When will I see a physician?",
+        "ans": "All patients are first triaged by an ER nurse. Then patients are evaluated by a physician. Patients who have a higher acuity of illness (i.e. heart attack or stroke) may be treated before those patients with less severe conditions (laceration, sprained ankle, etc.). Your patience is always appreciated."
+    },
+    {
+        "id": 2,
+        "que": "How is the Emergency Department staffed?",
+        "ans": "The department is staffed with emergency medicine physicians and nurses, physician assistants, technicians, CNAs and unit coordinators along with specialists from the laboratory, cardiology, respiratory and radiology departments."
+    },
+    {
+        "id": 3,
+        "que": "Will I be allowed to have visitors during my treatment?",
+        "ans": "Yes, usually, but the number of visitors in the emergency treatment area is kept to a minimum. Occasionally, visitors will be asked to remain in the ED lobby until your loved one is placed into the room and settled into their environment. Usually, two visitors per patient are allowed in most areas of the department."
+    },
+    {
+        "id": 4,
+        "que": "What happens if I am admitted?",
+        "ans": "Upon admission to the hospital, you will remain in the Emergency Department until your inpatient room is ready. Your admitting physician will visit you during their designated 'patient rounds'."
+    }
+]

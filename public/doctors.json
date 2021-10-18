@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Dr. Tom Hanks",
+        "degree": "MBBS FRCS FCPS",
+        "dep": "Medicine",
+        "img": "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?size=626&ext=jpg"
+    },
+    {
+        "id": 2,
+        "name": "Dr. Robert Downey",
+        "degree": "MBBS FCPS",
+        "dep": "Onchology",
+        "img": "https://as2.ftcdn.net/v2/jpg/03/05/41/27/500_F_305412791_XRNiWaFCREjLLpSQfj0e736foBoYXXYv.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Dr. Emma Stone",
+        "degree": "MBBS FRCS",
+        "dep": "Radiology",
+        "img": "https://as2.ftcdn.net/v2/jpg/02/76/94/29/500_F_276942923_vRe2zKQBgaQj0MyNOjqD8f7eVMyKZ2eL.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Dr. Kate Blancett",
+        "degree": "FRCS FCPS",
+        "dep": "Neurology",
+        "img": "https://image.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Dr. House",
+        "degree": "MBBS FRCS FCPS",
+        "dep": "Medicine",
+        "img": "https://image.freepik.com/free-photo/portrait-smiling-male-doctor_171337-1532.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Dr. Kevin Spacey",
+        "degree": "MBBS",
+        "dep": "Neurology",
+        "img": "https://image.freepik.com/free-photo/african-american-medical-doctor-man-with-mask-isolated-gray-background_231208-2230.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Dr. Robert De Niro",
+        "degree": "MBBS FRCS",
+        "dep": "Onchology",
+        "img": "https://image.freepik.com/free-photo/hospital-healthcare-workers-covid-19-treatment-concept-young-doctor-scrubs-making-daily-errands-clinic-listening-patient-symptoms-look-camera-professional-physician-curing-diseases_1258-57233.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Dr. Morgan Freeman",
+        "degree": "MBBS FCPS",
+        "dep": "Cardiology",
+        "img": "https://image.freepik.com/free-photo/doctor-standing-with-folder-stethoscope_1291-16.jpg?1"
+    },
+    {
+        "id": 9,
+        "name": "Dr. Scalett Johanssen",
+        "degree": "MBBS",
+        "dep": "Radiology",
+        "img": "https://image.freepik.com/free-photo/portrait-doctor_144627-39390.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Dr. Al Pacino",
+        "degree": "MBBS FRCS FCPS",
+        "dep": "Cardiology",
+        "img": "https://image.freepik.com/free-photo/portrait-successful-mid-adult-doctor-with-crossed-arms_1262-12865.jpg"
+    }
+]
