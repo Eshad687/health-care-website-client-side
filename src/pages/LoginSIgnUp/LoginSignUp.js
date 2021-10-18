@@ -1,19 +1,34 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 import logo from '../../images/logo-removebg-preview.png'
 import './LoginSignUp.css'
 
 const LoginSignUp = () => {
-    const { signInWithGoogle, signInWithEmailPassword } = useAuth();
+    const { createUser, signInWithGoogle, signInWithEmailPassword, setErrorMessage } = useAuth();
     const [login, setLogin] = useState(true)
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => {
-        signInWithEmailPassword(data.email, data.password);
-    };
     const toggleLoginSignUp = () => {
         setLogin(!login);
+    }
+    const location = useLocation()
+    const history = useHistory()
+    const redirect_uri = location.state?.from || '/'
+
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = data => {
+        login ? signInWithEmailPassword(data.email, data.password) : createUser(data.email, data.password, data.name)
+
+    };
+
+
+    const handleGoogleLogin = () => {
+        signInWithGoogle()
+            .then(result => {
+
+                history.push(redirect_uri)
+            }).catch(error => setErrorMessage(error.message))
     }
     return (
 
@@ -54,7 +69,7 @@ const LoginSignUp = () => {
             <br />
             <small>or</small>
             <br />
-            <Button onClick={signInWithGoogle} variant="danger" className=" px-5 py-2 rounded-3 border-0">Sign in with Google</Button>
+            <Button onClick={handleGoogleLogin} variant="danger" className=" px-5 py-2 rounded-3 border-0">Sign in with Google</Button>
         </div>
 
     );

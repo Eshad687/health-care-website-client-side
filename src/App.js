@@ -36,7 +36,7 @@ function App() {
           <Route path="/loginsignup">
             <LoginSignUp></LoginSignUp>
           </Route>
-          <PrivateRoute path="/:serviceId">
+          <PrivateRoute path="/service/:serviceId">
             <ServiceDetails></ServiceDetails>
           </PrivateRoute>
           <Route path="*">

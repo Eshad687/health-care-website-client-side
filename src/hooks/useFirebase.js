@@ -27,12 +27,8 @@ const useFirebase = () => {
         });
     }, [])
     const signInWithGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
+        return signInWithPopup(auth, googleProvider);
 
-            }).catch((error) => {
-                setErrorMessage(error.message)
-            });
     }
 
     const createUser = (email, password, name) => {
@@ -81,7 +77,7 @@ const useFirebase = () => {
     return {
         user,
         errorMessage,
-
+        setErrorMessage,
         createUser,
         signInWithEmailPassword,
         signInWithGoogle,

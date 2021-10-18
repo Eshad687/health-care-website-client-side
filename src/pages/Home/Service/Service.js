@@ -11,7 +11,7 @@ const Service = ({ service }) => {
     const history = useHistory();
 
     const handleDetails = () => {
-        history.push(`/${id}`)
+        history.push(`/service/${id}`)
     }
     return (
         <Col>
