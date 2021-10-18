@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import useAuth from '../../hooks/useAuth';
 import logo from '../../images/logo-removebg-preview.png'
 import './LoginSignUp.css'
 
 const LoginSignUp = () => {
+    const { signInWithGoogle, signInWithEmailPassword } = useAuth();
     const [login, setLogin] = useState(true)
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
-
+        signInWithEmailPassword(data.email, data.password);
     };
     const toggleLoginSignUp = () => {
         setLogin(!login);
@@ -51,7 +54,7 @@ const LoginSignUp = () => {
             <br />
             <small>or</small>
             <br />
-            <button className="bg-danger text-white px-5 py-2 rounded-3 border-0">Sign in with Google</button>
+            <Button onClick={signInWithGoogle} variant="danger" className=" px-5 py-2 rounded-3 border-0">Sign in with Google</Button>
         </div>
 
     );
