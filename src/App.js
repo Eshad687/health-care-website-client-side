@@ -9,6 +9,9 @@ import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Services from './pages/Home/Services/Services';
+import Departments from './pages/Home/Departments/Departments';
+import Faqs from './pages/Home/Faqs/Faqs';
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
         <Route path="/home">
           <Home></Home>
         </Route>
+
         <Route path="/doctors">
           <Doctors></Doctors>
         </Route>

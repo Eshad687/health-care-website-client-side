@@ -13,7 +13,7 @@ const Faqs = () => {
     }, [])
 
     return (
-        <div className="p-5">
+        <div id="faqs" className="p-5">
             <h3 className="mb-3">Frequently Asked Questions</h3>
             <Row>
 

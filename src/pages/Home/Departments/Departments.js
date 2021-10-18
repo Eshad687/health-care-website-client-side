@@ -1,17 +1,22 @@
-import React from 'react';
-// import Swiper core and required modules
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import 'swiper/swiper-bundle.css'
-
-import SwiperCore, {
-    Pagination
-} from 'swiper';
+import React, { useEffect, useState } from 'react';
+import Department from '../Department/Department';
 
 const Departments = () => {
-    return (
-        <div>
 
+    const [departments, setDepartments] = useState([]);
+
+    useEffect(() => {
+        fetch('./departments.json')
+            .then(res => res.json())
+            .then(data => setDepartments(data))
+    }, [])
+    return (
+        <div id="departments">
+            {departments?.map(department => <Department
+                key={department.id}
+                department={department}
+
+            ></Department>)}
         </div>
     );
 };

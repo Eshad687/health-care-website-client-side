@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Department = () => {
+const Department = ({ department }) => {
+    const { name, img, desc } = department;
     return (
         <div>
 
