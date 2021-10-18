@@ -1,0 +1,14 @@
+.form{
+    background-image: url("https://image.freepik.com/free-vector/clean-medical-background_53876-97927.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form input{
+width: 300px;
+}
+
+.link-button{
+    cursor: pointer;
+}

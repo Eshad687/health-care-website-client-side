@@ -36,7 +36,7 @@ function App() {
         <Route path="/loginsignup">
           <LoginSignUp></LoginSignUp>
         </Route>
-        <Route path="/servicedetails">
+        <Route path="/:serviceId">
           <ServiceDetails></ServiceDetails>
         </Route>
         <Route path="*">

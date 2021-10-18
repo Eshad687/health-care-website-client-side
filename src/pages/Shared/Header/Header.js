@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <Navbar className="sticky-top" collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand className="d-flex text-primary" href="#home"><img height="60px" src={logo} alt="" /><h4 >House General <br /> <span>Hospital</span> </h4></Navbar.Brand>
+                <Navbar.Brand as={NavLink} className="d-flex text-primary" to="/home"><img height="60px" src={logo} alt="" /><h4 >House General <br /> <span>Hospital</span> </h4></Navbar.Brand>
                 <Navbar.Toggle className="border-0" aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
@@ -16,7 +16,7 @@ const Header = () => {
                         <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#departments">Departments</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#faqs">FAQ</Nav.Link>
-                        <Nav.Link as={NavLink} to="/doctors">Doctors</Nav.Link>
+                        <Nav.Link as={NavLink} to="/doctors">Our Doctors</Nav.Link>
                         <Nav.Link as={NavLink} to="/getappointment"> Get Appointment </Nav.Link>
                         <Nav.Link as={NavLink} to="/loginsignup"> Login </Nav.Link>
 
