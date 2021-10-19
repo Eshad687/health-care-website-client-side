@@ -37,6 +37,7 @@ const LoginSignUp = () => {
                     updateName(data.name)
                     history.push(redirect_uri)
                     setErrorMessage('')
+                    // window.location.reload()
 
                 })
                 .catch((error) => {
@@ -99,7 +100,7 @@ const LoginSignUp = () => {
             <br />
             <small>or</small>
             <br />
-            <Button onClick={handleGoogleLogin} variant="danger" className=" px-5 py-2 rounded-3 border-0 btn">Sign in with Google</Button>
+            <Button onClick={handleGoogleLogin} variant="danger" className=" px-5 py-2 rounded-3 border-0 btn"><i class="fab fa-google"></i> Sign in with Google</Button>
         </div>
 
     );

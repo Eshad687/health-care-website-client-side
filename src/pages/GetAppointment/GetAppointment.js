@@ -93,7 +93,7 @@ const GetAppointment = () => {
 
 
                                     >
-                                        <Form.Control className=" p-0 text-white bg-warning fs-6 fw-bold btn" type="Submit" value="Send Message" />
+                                        <Form.Control className=" p-0 text-white bg-warning fs-6 fw-bold btn" type="Submit" defaultValue="Send Message" />
                                     </FloatingLabel>
                                 </Form.Group>
 

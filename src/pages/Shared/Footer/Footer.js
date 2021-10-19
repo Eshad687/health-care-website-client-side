@@ -48,6 +48,15 @@ const Footer = () => {
                     <span className="ms-3"><small>Staffs</small></span>
                     <span className="ms-3"><small>Cabins</small></span>
                     <span className="ms-3"><small>Pharmacy</small></span>
+                    <br />
+                    <br />
+                    <br />
+                    <div className="text-end me-5">
+                        <i className="fab fa-facebook-square me-3 fs-4"></i>
+                        <i className="fab fa-twitter-square me-3 fs-4"></i>
+                        <i className="fab fa-youtube me-3 fs-4"></i>
+                        <i className="fab fa-instagram me-3 fs-4"></i>
+                    </div>
                 </Col>
 
             </Row>
