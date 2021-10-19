@@ -50,11 +50,11 @@ const Footer = () => {
                     <br />
                     <br />
                     <br />
-                    <div className="text-end me-5">
+                    <div>
                         <i className="fab fa-facebook-square me-3 fs-4"></i>
                         <i className="fab fa-twitter-square me-3 fs-4"></i>
                         <i className="fab fa-youtube me-3 fs-4"></i>
-                        <i className="fab fa-instagram me-3 fs-4"></i>
+                        <i className="fab fa-instagram fs-4"></i>
                     </div>
                 </Col>
 
