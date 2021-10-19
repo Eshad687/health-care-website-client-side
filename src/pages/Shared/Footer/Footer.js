@@ -43,7 +43,6 @@ const Footer = () => {
                     <span className="ms-3"><small>Get Help</small></span>
                     <span className="ms-3"><small>Read Our Blogs</small></span>
                     <span className="ms-3"><small>New Additions</small></span>
-                    <span className="ms-3"><small>Success Stories</small></span>
                     <span className="ms-3"><small>NewsLetter</small></span>
                     <span className="ms-3"><small>Staffs</small></span>
                     <span className="ms-3"><small>Cabins</small></span>
