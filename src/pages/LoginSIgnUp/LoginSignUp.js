@@ -77,7 +77,7 @@ const LoginSignUp = () => {
                 {errors.password && <small className="text-danger">This field is required</small>}
                 <br />
                 {
-                    login ? <input className="bg-info text-white px-5 py-2 w-80 rounded-3 border-0" type="submit" value="Log In" /> : <input className="bg-info text-white px-5 py-2 rounded-3 border-0" type="submit" value="Sign Up" />
+                    login ? <input className="bg-info text-white px-5 py-2 w-80 rounded-3 border-0 btn" type="submit" value="Log In" /> : <input className="bg-info text-white px-5 py-2 rounded-3 border-0 btn" type="submit" value="Sign Up" />
                 }
 
 
@@ -85,13 +85,13 @@ const LoginSignUp = () => {
             </form>
 
             {
-                login ? <><small onClick={toggleLoginSignUp} className="text-primary link-button">Don't have an account?</small>
-                    <small className="ms-5  text-primary link-button ">Forgot Password?</small></> : <small onClick={toggleLoginSignUp} className=" text-primary link-button">Already have an account?</small>
+                login ? <small onClick={toggleLoginSignUp} className="text-primary link-button">Don't have an account?</small>
+                    : <small onClick={toggleLoginSignUp} className=" text-primary link-button">Already have an account?</small>
             }
             <br />
             <small>or</small>
             <br />
-            <Button onClick={handleGoogleLogin} variant="danger" className=" px-5 py-2 rounded-3 border-0">Sign in with Google</Button>
+            <Button onClick={handleGoogleLogin} variant="danger" className=" px-5 py-2 rounded-3 border-0 btn">Sign in with Google</Button>
         </div>
 
     );

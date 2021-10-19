@@ -16,11 +16,11 @@ const ServiceDetails = () => {
             {
                 <Row xs={1} md={2} className="g-4">
                     <Col >
-                        <img className="rounded" width="450" src={service?.img} alt="" />
+                        <img className="rounded" width="350" src={service?.img} alt="" />
                     </Col>
                     <Col>
                         <h3>{service?.name}</h3>
-                        <p>{service?.desc}</p>
+                        <p className="text-muted">{service?.desc}</p>
                     </Col>
                 </Row>
             }

@@ -1,13 +1,15 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import logo from '../../../images/logo-removebg-preview.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMailBulk, faPhoneSquareAlt, faAddressCard } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
     return (
         <div className="p-5 bg-dark text-white">
             <Row>
                 <Col sm={12} md={4} >
-                    <span>Email us at</span>
+                    <span><FontAwesomeIcon icon={faMailBulk} /> Email us at</span>
                     <br />
                     <small >HouseGenaral@house.com</small>
                     <br />
@@ -15,7 +17,8 @@ const Footer = () => {
                     <br />
 
 
-                    <span>Call Us at</span>
+                    <span><FontAwesomeIcon icon={faPhoneSquareAlt} /> Call us at</span>
+                    <br />
                     <small>+8897634567</small>
                     <br />
                     <small>+8897634568</small>
@@ -25,7 +28,7 @@ const Footer = () => {
                     <small>+8897634564</small>
                     <br />
                     <br />
-                    <span>Address</span>
+                    <span><FontAwesomeIcon icon={faAddressCard} /> Address</span>
                     <br />
                     <small>New Eskaton Road, Dhaka 1207, Dhaka, Bangladesh</small>
 

@@ -7,13 +7,17 @@ const GetAppointment = () => {
         <div className="appointment">
             <Container>
                 <Row>
+
                     <Col xs={12} md={6}>
+                        <Col xs={12}>
+                            <h2 className="text-center pt-5">BOOK AN <span className="border-bottom border-3 border-success text-success">APPOINTMENT</span> </h2>
+                        </Col>
                         <Form className=" py-5 ">
                             <Row className="mb-3">
-                                <Form.Group as={Col}>
-                                    <FloatingLabel controlId="floatingSelectGrid" label="Select The Department">
+                                <Form.Group as={Col} className >
+                                    <FloatingLabel controlId="floatingSelectGrid" label="Departments">
                                         <Form.Select >
-                                            <option>Click to Select</option>
+                                            <option>Select</option>
                                             <option value="1">Oncology</option>
                                             <option value="2">Cardiology</option>
                                             <option value="3">Radiology</option>
@@ -89,7 +93,7 @@ const GetAppointment = () => {
 
 
                                     >
-                                        <Form.Control className=" p-0 text-white bg-warning fs-6 fw-bold" type="Submit" value="Send Message" />
+                                        <Form.Control className=" p-0 text-white bg-warning fs-6 fw-bold btn" type="Submit" value="Send Message" />
                                     </FloatingLabel>
                                 </Form.Group>
 

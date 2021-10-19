@@ -7,9 +7,9 @@ const Faq = ({ faq, index }) => {
     const indexString = index + ""
 
     return (
-        <Accordion.Item eventKey={indexString}>
+        <Accordion.Item className="card mb-2 border rounded-3" eventKey={indexString}>
             <Accordion.Header ><h6>{que}</h6></Accordion.Header>
-            <Accordion.Body>
+            <Accordion.Body className="text-muted">
                 {ans}
 
             </Accordion.Body>

@@ -7,14 +7,14 @@ const Faqs = () => {
     const [faqs, setFaqs] = useState([]);
 
     useEffect(() => {
-        fetch('./faq.json')
+        fetch('/faq.json')
             .then(res => res.json())
             .then(data => setFaqs(data))
     }, [])
 
     return (
-        <div id="faqs" className="m-5">
-            <h3 className="mb-3">Frequently Asked Questions</h3>
+        <div id="faqs" className="m-5 pt-5 ">
+            <h2 className="text-center pb-5">FREQUENTLY ASKED <span className="border-bottom border-3 border-primary text-primary">QUESTIONS</span> </h2>
             <Row>
 
 

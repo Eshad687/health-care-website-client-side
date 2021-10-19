@@ -4,9 +4,11 @@ import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/logo-removebg-preview.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSignInAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
-    const { user, logOut, isLoading } = useAuth();
+    const { user, logOut } = useAuth();
 
     return (
         <Navbar className="sticky-top" collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -18,13 +20,13 @@ const Header = () => {
                         <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#departments">Departments</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#faqs">FAQ</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#faqs">FAQs</Nav.Link>
                         <Nav.Link as={NavLink} to="/doctors">Our Doctors</Nav.Link>
                         <Nav.Link as={NavLink} to="/getappointment"> Get Appointment </Nav.Link>
                         {user?.email && <span className="text-white mx-3 my-auto">{user.displayName}</span>}
                         {
-                            user.email ? <Button variant="danger" onClick={logOut} className="px-3 py-1 rounded-3 border-0">Log out</Button> :
-                                <Nav.Link as={NavLink} to="/loginsignup"> Login </Nav.Link>
+                            user.email ? <Button variant="danger" onClick={logOut} className="px-3 py-1 rounded-3 border-0 btn">Log out <FontAwesomeIcon icon={faSignOutAlt} /></Button> :
+                                <Nav.Link as={NavLink} to="/loginsignup"> Login <FontAwesomeIcon icon={faSignInAlt} /> </Nav.Link>
                         }
 
 
