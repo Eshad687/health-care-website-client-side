@@ -47,7 +47,7 @@ const useFirebase = () => {
     const logOut = () => {
         setIsLoading(true);
         signOut(auth).then(() => {
-
+            setErrorMessage('');
         }).catch((error) => {
             setErrorMessage(error.message)
         })

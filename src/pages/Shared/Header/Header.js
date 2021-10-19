@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
-    const { user, logOut } = useAuth();
+    const { user, logOut, setErrorMessage } = useAuth();
 
     return (
         <Navbar className="sticky-top" collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -26,7 +26,7 @@ const Header = () => {
                         {user?.email && <span className="text-white mx-3 my-auto">{user.displayName}</span>}
                         {
                             user.email ? <Button variant="danger" onClick={logOut} className="px-3 py-1 rounded-3 border-0 btn">Log out <FontAwesomeIcon icon={faSignOutAlt} /></Button> :
-                                <Nav.Link as={NavLink} to="/loginsignup"> Login <FontAwesomeIcon icon={faSignInAlt} /> </Nav.Link>
+                                <Nav.Link onClick={() => setErrorMessage('')} as={NavLink} to="/loginsignup"> Login <FontAwesomeIcon icon={faSignInAlt} /> </Nav.Link>
                         }
 
 

@@ -7,10 +7,12 @@ import logo from '../../images/logo-removebg-preview.png'
 import './LoginSignUp.css'
 
 const LoginSignUp = () => {
-    const { createUser, signInWithGoogle, signInWithEmailPassword, setErrorMessage, updateName, setIsLoading } = useAuth();
+    const { createUser, signInWithGoogle, signInWithEmailPassword, setErrorMessage, updateName, setIsLoading, errorMessage } = useAuth();
     const [login, setLogin] = useState(true)
+
     const toggleLoginSignUp = () => {
         setLogin(!login);
+        setErrorMessage('');
     }
     const location = useLocation()
     const history = useHistory()
@@ -22,6 +24,7 @@ const LoginSignUp = () => {
         login ? signInWithEmailPassword(data.email, data.password)
             .then((result) => {
                 history.push(redirect_uri)
+                setErrorMessage('')
             })
             .catch((error) => {
                 setErrorMessage(error.message)
@@ -33,13 +36,14 @@ const LoginSignUp = () => {
 
                     updateName(data.name)
                     history.push(redirect_uri)
-
+                    setErrorMessage('')
 
                 })
                 .catch((error) => {
                     setErrorMessage(error.message);
                 })
                 .finally(() => setIsLoading(false));
+
 
     };
 
@@ -49,6 +53,7 @@ const LoginSignUp = () => {
             .then(result => {
 
                 history.push(redirect_uri)
+                setErrorMessage('');
             }).catch(error => setErrorMessage(error.message))
             .finally(() => setIsLoading(false));
     }
@@ -69,12 +74,14 @@ const LoginSignUp = () => {
 
                 <br />
                 {errors.email && <small className="text-danger m-0 p-0">This field is required</small>}
+
                 <br />
                 <input type="password" className="bg-gray-200 p-2 w-80 rounded-3 border-0" placeholder="Enter Your password" {...register("password", { required: true })} />
 
 
                 <br />
                 {errors.password && <small className="text-danger">This field is required</small>}
+                <small className="text-danger">{errorMessage}</small>
                 <br />
                 {
                     login ? <input className="bg-info text-white px-5 py-2 w-80 rounded-3 border-0 btn" type="submit" value="Log In" /> : <input className="bg-info text-white px-5 py-2 rounded-3 border-0 btn" type="submit" value="Sign Up" />
@@ -83,6 +90,7 @@ const LoginSignUp = () => {
 
 
             </form>
+
 
             {
                 login ? <small onClick={toggleLoginSignUp} className="text-primary link-button">Don't have an account?</small>
