@@ -6,6 +6,7 @@ import { faMailBulk, faPhoneSquareAlt, faAddressCard } from '@fortawesome/free-s
 
 const Footer = () => {
     return (
+        // footer page
         <div className="p-5 bg-dark text-white">
             <Row>
                 <Col sm={12} md={4} >

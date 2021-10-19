@@ -5,6 +5,7 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signI
 initializeAuthentication();
 
 const useFirebase = () => {
+    // states
     const [isLoading, setIsLoading] = useState(true)
     const [user, setUser] = useState({});
     const [errorMessage, setErrorMessage] = useState('');
@@ -12,11 +13,11 @@ const useFirebase = () => {
 
     const auth = getAuth();
 
-
+    // handling user change
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
             if (user?.email) {
-                console.log("on user change", user)
+
                 setUser(user);
 
 
@@ -28,22 +29,27 @@ const useFirebase = () => {
             setIsLoading(false);
         });
     }, [])
+
+    // handling google sign in
     const signInWithGoogle = () => {
         setIsLoading(true);
         return signInWithPopup(auth, googleProvider);
 
     }
 
+    // creating user
     const createUser = (email, password) => {
 
         return createUserWithEmailAndPassword(auth, email, password)
 
     }
 
+    // login user
     const signInWithEmailPassword = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password)
 
     }
+    // logout user
     const logOut = () => {
         setIsLoading(true);
         signOut(auth).then(() => {
@@ -54,6 +60,7 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
 
     }
+    // updating name
     const updateName = (name) => {
         updateProfile(auth.currentUser, {
             displayName: name

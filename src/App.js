@@ -15,6 +15,7 @@ import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
+
     <AuthProvider>
       <BrowserRouter>
         <Header></Header>

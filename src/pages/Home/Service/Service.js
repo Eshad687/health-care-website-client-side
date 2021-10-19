@@ -10,12 +10,13 @@ const Service = ({ service }) => {
     const { name, img, desc, id } = service;
 
     const history = useHistory();
-
+    // dynamic routing
     const handleDetails = () => {
         history.push(`/service/${id}`)
     }
     return (
         <Col>
+            {/* service card */}
             <Card className="card rounded-3 shadow border-0">
                 <Card.Img className="card-img" variant="top" height="200px" src={img} />
                 <Card.Body>

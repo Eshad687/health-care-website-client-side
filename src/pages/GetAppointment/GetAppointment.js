@@ -6,6 +6,7 @@ const GetAppointment = () => {
     return (
         <div className="appointment">
             <Container>
+                {/* Appointment form */}
                 <Row>
 
                     <Col xs={12} md={6}>

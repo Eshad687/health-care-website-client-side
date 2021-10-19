@@ -7,17 +7,23 @@ import logo from '../../images/logo-removebg-preview.png'
 import './LoginSignUp.css'
 
 const LoginSignUp = () => {
+    // getting authentication  related staffs using context api
     const { createUser, signInWithGoogle, signInWithEmailPassword, setErrorMessage, updateName, setIsLoading, errorMessage } = useAuth();
+
+    // toggle login and signup page
     const [login, setLogin] = useState(true)
 
     const toggleLoginSignUp = () => {
         setLogin(!login);
         setErrorMessage('');
     }
+
+    //get back to previous page upon login
     const location = useLocation()
     const history = useHistory()
     const redirect_uri = location.state?.from || '/'
 
+    // using form data to authentication and create user
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         setIsLoading(true);
@@ -37,7 +43,7 @@ const LoginSignUp = () => {
                     updateName(data.name)
                     history.push(redirect_uri)
                     setErrorMessage('')
-                    // window.location.reload()
+                    window.location.reload()
 
                 })
                 .catch((error) => {
@@ -48,7 +54,7 @@ const LoginSignUp = () => {
 
     };
 
-
+    // handle google login
     const handleGoogleLogin = () => {
         signInWithGoogle()
             .then(result => {
@@ -59,7 +65,7 @@ const LoginSignUp = () => {
             .finally(() => setIsLoading(false));
     }
     return (
-
+        // login and sign up page
         <div className="form text-center banner bg-center bg-no-repeat py-5">
             <img className="mx-auto" width="90px" src={logo} alt="" />
             {

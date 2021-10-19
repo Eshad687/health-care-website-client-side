@@ -8,9 +8,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
+
+    // getting data from authentication context api
     const { user, logOut, setErrorMessage } = useAuth();
 
     return (
+        // header navbar
         <Navbar className="sticky-top" collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand as={NavLink} className="d-flex text-primary" to="/home"><img height="60px" src={logo} alt="" /><h4 >House General <br /> <span>Hospital</span> </h4></Navbar.Brand>

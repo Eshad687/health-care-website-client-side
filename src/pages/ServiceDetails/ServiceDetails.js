@@ -4,14 +4,15 @@ import { useParams } from 'react-router';
 import useServices from '../../hooks/useServices';
 
 const ServiceDetails = () => {
+    // getting data using dynamic route
     const { serviceId } = useParams();
     const services = useServices();
-    console.log(services)
+
     const service = services?.find(srvc => srvc.id === +serviceId);
-    console.log(serviceId)
-    console.log(service)
+
 
     return (
+        // service details page
         <Container className="my-5">
             {
                 <Row xs={1} md={2} className="g-4">
