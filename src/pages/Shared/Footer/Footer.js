@@ -40,12 +40,18 @@ const Footer = () => {
                 </Col >
 
                 <Col sm={12} md={4} className="mt-2 ">
-                    <span className="me-3"><small>Get Help</small></span>
-                    <span className="me-3"><small>Read Our Blogs</small></span>
-                    <span className="me-3"><small>New Additions</small></span>
-                    <span className="me-3"><small>NewsLetter</small></span>
-                    <span className="me-3"><small>Staffs</small></span>
-                    <span className="me-3"><small>Cabins</small></span>
+                    <span ><small>Get Help</small></span>
+                    <br />
+                    <span ><small>Read Our Blogs</small></span>
+                    <br />
+                    <span ><small>New Additions</small></span>
+                    <br />
+                    <span ><small>NewsLetter</small></span>
+                    <br />
+                    <span ><small>Staffs</small></span>
+                    <br />
+                    <span ><small>Cabins</small></span>
+                    <br />
                     <span><small>Pharmacy</small></span>
                     <br />
                     <br />
