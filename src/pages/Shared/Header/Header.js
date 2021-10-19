@@ -6,7 +6,8 @@ import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/logo-removebg-preview.png'
 
 const Header = () => {
-    const { user, logOut } = useAuth();
+    const { user, logOut, isLoading } = useAuth();
+
     return (
         <Navbar className="sticky-top" collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Button, Form, Row, Container, FloatingLabel } from 'react-bootstrap';
+import { Col, Form, Row, Container, FloatingLabel } from 'react-bootstrap';
 import './GetAppointment.css'
 
 const GetAppointment = () => {

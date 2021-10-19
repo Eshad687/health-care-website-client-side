@@ -16,7 +16,7 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>Improving Lives Together</h3>
+                    <h2>Improving Lives Together</h2>
                     <p>Highly Qualified Doctors At Your Doorsteps</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -27,7 +27,7 @@ const Banner = () => {
                     alt="Second slide"
                 />
                 <Carousel.Caption >
-                    <h3>Healthy does not mean expensive</h3>
+                    <h2>Healthy does not mean expensive</h2>
                     <p>Modern Technology Within Your Grasp</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -38,7 +38,7 @@ const Banner = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption >
-                    <h3>Health is the first step to prosperity</h3>
+                    <h2>Health is the first step to prosperity</h2>
                     <p>24 hours Services 7 Days Of The Week</p>
                 </Carousel.Caption>
             </Carousel.Item>

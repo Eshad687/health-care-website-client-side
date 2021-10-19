@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Row } from 'react-bootstrap';
 import Department from '../Department/Department';
 
 const Departments = () => {
@@ -11,13 +12,17 @@ const Departments = () => {
             .then(data => setDepartments(data))
     }, [])
     return (
-        <div id="departments">
-            {departments?.map(department => <Department
-                key={department.id}
-                department={department}
+        <div id="departments" className="mx-5">
+            <h2>Departments</h2>
+            <Row xs={1} md={3} className="g-4 mt-2">
+                {departments?.map(department => <Department
+                    key={department.id}
+                    department={department}
 
-            ></Department>)}
+                ></Department>)}
+            </Row>
         </div>
+
     );
 };
 

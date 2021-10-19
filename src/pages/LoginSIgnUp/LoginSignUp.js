@@ -7,7 +7,7 @@ import logo from '../../images/logo-removebg-preview.png'
 import './LoginSignUp.css'
 
 const LoginSignUp = () => {
-    const { createUser, signInWithGoogle, signInWithEmailPassword, setErrorMessage } = useAuth();
+    const { createUser, signInWithGoogle, signInWithEmailPassword, setErrorMessage, updateName, setIsLoading } = useAuth();
     const [login, setLogin] = useState(true)
     const toggleLoginSignUp = () => {
         setLogin(!login);
@@ -18,7 +18,28 @@ const LoginSignUp = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
-        login ? signInWithEmailPassword(data.email, data.password) : createUser(data.email, data.password, data.name)
+        setIsLoading(true);
+        login ? signInWithEmailPassword(data.email, data.password)
+            .then((result) => {
+                history.push(redirect_uri)
+            })
+            .catch((error) => {
+                setErrorMessage(error.message)
+            })
+            .finally(() => setIsLoading(false))
+            : createUser(data.email, data.password)
+                .then((result) => {
+
+
+                    updateName(data.name)
+                    history.push(redirect_uri)
+
+
+                })
+                .catch((error) => {
+                    setErrorMessage(error.message);
+                })
+                .finally(() => setIsLoading(false));
 
     };
 
@@ -29,6 +50,7 @@ const LoginSignUp = () => {
 
                 history.push(redirect_uri)
             }).catch(error => setErrorMessage(error.message))
+            .finally(() => setIsLoading(false));
     }
     return (
 

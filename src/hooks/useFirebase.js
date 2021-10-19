@@ -5,6 +5,7 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signI
 initializeAuthentication();
 
 const useFirebase = () => {
+    const [isLoading, setIsLoading] = useState(true)
     const [user, setUser] = useState({});
     const [errorMessage, setErrorMessage] = useState('');
     const googleProvider = new GoogleAuthProvider();
@@ -24,44 +25,33 @@ const useFirebase = () => {
             } else {
                 setUser({})
             }
+            setIsLoading(false);
         });
     }, [])
     const signInWithGoogle = () => {
+        setIsLoading(true);
         return signInWithPopup(auth, googleProvider);
 
     }
 
-    const createUser = (email, password, name) => {
+    const createUser = (email, password) => {
 
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((result) => {
+        return createUserWithEmailAndPassword(auth, email, password)
 
-
-                updateName(name)
-
-                console.log('on user create', result.user);
-
-            })
-            .catch((error) => {
-                setErrorMessage(error.message);
-            });
     }
 
     const signInWithEmailPassword = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                console.log('on login', result.user);
-            })
-            .catch((error) => {
-                setErrorMessage(error.message)
-            });
+        return signInWithEmailAndPassword(auth, email, password)
+
     }
     const logOut = () => {
+        setIsLoading(true);
         signOut(auth).then(() => {
 
         }).catch((error) => {
             setErrorMessage(error.message)
-        });
+        })
+            .finally(() => setIsLoading(false));
 
     }
     const updateName = (name) => {
@@ -77,6 +67,9 @@ const useFirebase = () => {
     return {
         user,
         errorMessage,
+        isLoading,
+        setIsLoading,
+        updateName,
         setErrorMessage,
         createUser,
         signInWithEmailPassword,
